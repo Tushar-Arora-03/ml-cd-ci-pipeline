@@ -22,4 +22,4 @@ model.fit(X_train, y_train)
 
 
 #Save the model
-joblib.dump(model, 'model/iris_model.pkl")
+joblib.dump(model, 'model/iris_model.pkl')
