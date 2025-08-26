@@ -18,7 +18,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2,random_s
 
 
 #load the Save model
-model = joblib.load(model, 'model/iris_model.pkl')
+model = joblib.load('model/iris_model.pkl')
 
 
 #make predictions 
