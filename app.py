@@ -9,7 +9,7 @@ from flask import Flask, request, jsonify
 MODEL_PATH = os.getenv("MODEL_PATH", "model/iris_model.pkl")
 
 # app
-app = Flask(_name_)
+app = Flask(__name__)
 
 # load once at startup
 try:
@@ -48,6 +48,6 @@ def predict():
     except Exception as e:
         return jsonify(error=str(e)), 500
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     # local dev only; Render will run with Gunicorn (see startCommand below)
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
