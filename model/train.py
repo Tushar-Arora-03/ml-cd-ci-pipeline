@@ -5,7 +5,7 @@ import joblib
 
 
 #Load the dataset
-data=pd.read_csv('../data/iris.csv')
+data=pd.read_csv('/data/iris.csv')
 
 
 #Preprocess the dataset
